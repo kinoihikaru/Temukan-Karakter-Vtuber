@@ -18,6 +18,76 @@
                     <h1 id="register" >Temukan Karakter Kamu</h1>
                     <h5 id="warning" class="warning">Harap pernyataan di isi</h5>
                     <div class="tab">
+                        <div class="info mt-3">
+                            <div class="d-flex flex-row">
+                                <div class="container mt-2 text-center">
+                                    <p>Halaman ini merupakan halaman test untuk mengetahui karakter kamu dan genre anime yang kamu suka tonton. Kriteria yang dipakai untuk mengetahi karakter kamu terdiri dari :
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center"><strong>Openness</strong></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            Gambaran keluasan, kedalaman,dan kompleksitas mental individu dan pengalamannya
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card w-75">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center"><strong>Conscientiousness</strong></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            Mengukur tingkat keter-aturan seseorang,ketahan an dan motivasi dalam mencapai tujuan berlawanan dengan ketergantungan, dan kecenderungan untuk menjadi malas dan lemah
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card w-75">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center"><strong>Extraversion</strong></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            Mengukur kuantitas dan intensitas dari interaksi interpersonal, tingkatan aktifitas, kebutuhan akan dorongan, dan kapasitas dan kesenangan
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center"><strong>Agreeableness</strong></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            Mengukur kualitas dari apa yang dilakukan dengan orang lain dan apa yang dilakukan terhadap orang lain
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card w-100">
+                                        <div class="card-header">
+                                            <h5 class="card-title text-center"><strong>Neuroticism</strong></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            Menggambarkan stabilitas emosional dengan cakupan-cakupan perasaan negatif yang kuat termasuk kecemasan,kesedihan, irritabilitas dan ketidak percaya diri
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="row">
+                            <div class="text-center mt-2">
+                                <h3 class="text-primary"><strong>Harap mengisi nama kamu</strong></h3>
+                            </div>
+                        </div>
                         <div class="mb-3">
                             <div class="row m-4">
                                 <div class="col-md-3">
@@ -60,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="container mt-2">
-                                <p> <strong> Formulir Pernyataan Pertama </strong>angka 1 mewakili pernyataan tersebut merupakan hal yang tidak pernah anda lakukan / sangat tidak sesuai dengan yang anda lakukan dan angka 5 tersebut mewakili pernyataan tersebut merupakan kebiasaan anda / sangat sesuai dengan anda lakukan. </p> Keterangan :
+                                <p> <strong>Pernyataan pertama berisi hal-hal yang berhubungan dengan anime, komunitas, dan tontonan yang mempengaruhi karakter.</strong> Angka 1 mewakili pernyataan tersebut merupakan hal yang tidak pernah anda lakukan / sangat tidak sesuai dengan yang anda lakukan dan angka 5 tersebut mewakili pernyataan tersebut merupakan kebiasaan anda / sangat sesuai dengan anda lakukan. </p> Keterangan :
                             </div>
                             <div class="container row text-center">
                                 <div class="col-md-6">
@@ -79,7 +149,8 @@
                         <div class="tab">
                             <div id="o">
                                 <div class="card col-md-12 m-2">
-                                    <div class="card-body ">
+                                    <div class="card-body">
+                                        <h5 class="text-warning"><strong> Openness</strong></h5>
                                         <h4 class="text-center">{{ $value['openness'] }}</h4>
                                         <label class="karakter-inline"> 1 <i class="far fa-tired"></i>
                                             <input type="radio" name="o" class="statement1" value="5">  <span class="checkmark"></span>
@@ -102,6 +173,7 @@
                             <div id="c">
                                 <div class="card col-md-12 m-2">
                                     <div class="card-body ">
+                                        <h5 class="text-warning"><strong>Conscientiousness</strong> </h5>
                                         <h4 class="text-center">{{ $value['conscientiousness'] }}</h4>
                                         <label class="karakter-inline"> 1 <i class="far fa-tired"></i>
                                             <input type="radio" name="c" class="statement2" value="5"> <span class="checkmark"></span>
@@ -124,6 +196,7 @@
                             <div id="e">
                                 <div class="card col-md-12 m-2">
                                     <div class="card-body ">
+                                        <h5 class="text-warning"><strong> Extraversion</strong></h5>
                                         <h4 class="text-center">{{ $value['extraversion'] }}</h4>
                                         <label class="karakter-inline"> 1 <i class="far fa-tired"></i>
                                             <input type="radio" name="e" class="statement3" value="5"> <span class="checkmark"></span>
@@ -146,6 +219,7 @@
                             <div id="a">
                                 <div class="card col-md-12 m-2">
                                     <div class="card-body ">
+                                        <h5 class="text-warning"><strong> Agreeableness</strong></h5>
                                         <h4 class="text-center">{{ $value['agreeableness'] }}</h4>
                                         <label class="karakter-inline"> 1 <i class="far fa-tired"></i>
                                             <input type="radio" name="a" class="statement4" value="5"> <span class="checkmark"></span>
@@ -168,6 +242,7 @@
                             <div id="n">
                                 <div class="card col-md-12 m-2">
                                     <div class="card-body ">
+                                        <h5 class="text-warning"><strong> Neuroticism</strong></h5>
                                         <h4 class="text-center">{{ $value['neuroticism'] }}</h4>
                                         <label class="karakter-inline"> 1 <i class="far fa-tired"></i>
                                             <input type="radio" name="n" class="statement5" value="5"> <span class="checkmark"></span>
@@ -219,7 +294,7 @@
                                     </div>
                                 </div>
                                 <div class="container">
-                                   <p> <strong> Formulir Pernyataan Kedua </strong> angka 1 mewakili genre yang biasanya tidak Anda sukai dan hindari, dan angka 5 mewakili genre yang biasanya Anda sukai dan cari. </p> Keterangan :
+                                   <p> <strong>Pernyataan Kedua berisi berapa banyak anda biasanya menikmati menonton anime.</strong> Angka 1 mewakili genre yang biasanya tidak Anda sukai dan hindari, dan angka 5 mewakili genre yang biasanya Anda sukai dan cari. </p> Keterangan :
                                 </div>
                                 <div class="container row text-center">
                                     <div class="col-md-6">
@@ -517,33 +592,3 @@
 
 </script>
 @endsection
-
-{{-- <div class="tab">
-                        <p><input placeholder="First Name" oninput="this.className = ''" name="first"></p>
-                        <p><input placeholder="Last Name" oninput="this.className = ''" name="last"></p>
-                        <p><input placeholder="Email" oninput="this.className = ''" name="email"></p>
-                    </div> --}}
-                    {{-- <div class="tab">
-                        <p><input placeholder="Credit Card #" oninput="this.className = ''" name="email"></p>
-                        <p>Exp Month <select id="month">
-                                <option value="1">January</option>
-                                <option value="2">February</option>
-                                <option value="3">March</option>
-                                <option value="4">April</option>
-                                <option value="5">May</option>
-                                <option value="6">June</option>
-                                <option value="7">July</option>
-                                <option value="8">August</option>
-                                <option value="9">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select></p>
-                        <p>Exp Year <select id="year">
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                            </select></p>
-                        <p><input placeholder="CVV" oninput="this.className = ''" name="phone"></p>
-                    </div> --}}

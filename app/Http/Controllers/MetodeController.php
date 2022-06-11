@@ -132,7 +132,7 @@ class MetodeController extends Controller
         }
 
         foreach ($pangkat as $bagi) {
-            $pembagian [] = array_sum($bagi);
+            $pembagian [] = sqrt(array_sum($bagi));
         }
 
         for($g=0; $g<count($coloum_topsis); $g++)  {
@@ -162,9 +162,9 @@ class MetodeController extends Controller
         }
 
         for ($s=0; $s < count($data_genre); $s++) {
-           $dnegatif [] = array_sum(array_column($d_negatif, $s));
-           $dpositif [] = array_sum(array_column($d_positif, $s));
-        }
+            $dnegatif [] = sqrt(array_sum(array_column($d_negatif, $s)));
+            $dpositif [] = sqrt(array_sum(array_column($d_positif, $s)));
+         }
 
         for ($q=0; $q < count($dnegatif); $q++) {
             $total [$q] = $dnegatif[$q] /($dnegatif[$q]+$dpositif[$q]) * $data['genre_nilai'][$q];

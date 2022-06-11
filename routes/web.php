@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CobaController;
 use App\Http\Controllers\ViewController;
 use App\Http\Controllers\MetodeController;
-
+use App\Http\Controllers\TestMetodeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +33,6 @@ Route::get('/viewUser',[MetodeController::class,'viewUser'])->name("ser");
 Route::post('/user-save' ,[MetodeController::class, 'store'])->name('user.save');
 
 Route::get('/getDataCoba1',[CobaController::class,'getDaCoba1']);
+
+Route::get('/testSAW' ,[TestMetodeController::class, 'testSAW']);
+Route::get('/testTopsis' ,[TestMetodeController::class, 'testTopsis']);

@@ -55,6 +55,10 @@ if (nilaiTab == 1 && !validateForm() ) return false;
 tab[currentTab].style.display = "none";
 currentTab = currentTab + nilaiTab;
 
+if(currentTab == 7){
+    document.getElementById("register").innerHTML = "Tentukan Genre Yang Anda Sukai";
+}
+
 // cek if current tab is finish
 if (currentTab >= tab.length) {
 
